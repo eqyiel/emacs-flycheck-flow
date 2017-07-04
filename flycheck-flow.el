@@ -119,7 +119,9 @@ See URL `http://flowtype.org/'."
               "--json"
               "--from" "emacs"
               "--color=never"
-              source-original)
+              source-original
+              " < "
+              source-inplace)
     :standard-input t
     :predicate flycheck-flow--predicate
     :error-parser flycheck-flow--parse-json
